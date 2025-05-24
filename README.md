@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# 🌐 Pandemic Resilience System – Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the **React-based frontend** for the **Pandemic Resilience System (PRS)**. The platform provides a comprehensive dashboard experience for **government officials**, the **general public**, and **merchants**, helping each group respond efficiently during pandemic conditions.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Project Overview
 
-### `npm start`
+The frontend interfaces with a FastAPI backend to display relevant, real-time information using structured dashboards. It emphasizes **usability**, **role-based interaction**, and **data visualization** through charts and filters.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🎯 Key Dashboards
 
-### `npm test`
+### 🏛 Government Dashboard
+- View vaccination trends and supply chain updates.
+- Monitor compliance and public health metrics.
+- Analyze national data using integrated charts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🧍 Public Dashboard
+- Manage PRS-ID and personal information.
+- View and upload vaccination records.
+- Locate nearby stores for critical item availability.
 
-### `npm run build`
+### 🛒 Merchant Dashboard
+- Manage stock levels and inventory.
+- Report sales of restricted items.
+- Comply with purchasing restrictions and licensing.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React.js**
+- **React Router DOM**
+- **Recharts** (for data visualization)
+- **Tailwind CSS / Custom CSS** (styling)
+- **Fetch API** for backend communication
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🔗 Backend Integration
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The frontend is fully connected to a RESTful FastAPI backend running on:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**[http://localhost:8000](http://localhost:8000)** (or your configured deployment URL)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 📂 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+src/
+├── components/
+│   ├── GovernmentDashboard/
+│   ├── PublicDashboard/
+│   └── MerchantDashboard/
+├── App.tsx
+└── index.tsx
